@@ -8,8 +8,8 @@ from django.contrib.auth.models import User
 def home(request):
     context = {
         'genres':Homepage.objects.all()
-        }
-    return render(request, 'home.html',context,{'title':'Home'})
+    }
+    return render(request, 'home.html',context)
 
 
 def booklist(request):
